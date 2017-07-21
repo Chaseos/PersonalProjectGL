@@ -18,6 +18,10 @@
           <option name="url" value="https://github.com/Chaseos/GLTest.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/davidgassner/WeeklyTips.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\chase\Desktop" />
