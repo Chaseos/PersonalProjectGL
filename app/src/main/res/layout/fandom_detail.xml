@@ -1,0 +1,153 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/locations_scroll_view"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <View
+            android:id="@+id/fandom_below_tabs_blackbar"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@android:color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/fandom_image_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/images"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/fandom_video_button"
+            app:layout_constraintTop_toBottomOf="@+id/fandom_below_tabs_blackbar"
+            android:layout_marginLeft="8dp" />
+
+        <Button
+            android:id="@+id/fandom_video_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="16sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/video"
+            app:layout_constraintLeft_toRightOf="@+id/fandom_image_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fandom_image_button" />
+
+        <View
+            android:id="@+id/separation_black_bar"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fandom_video_button" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fandom_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separation_black_bar"/>
+
+        <TextView
+            android:id="@+id/more_info_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/more_info"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fandom_recycler_view" />
+
+        <TextView
+            android:id="@+id/fandom_link_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:linksClickable="true"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/more_info_header"
+            tools:context="com.example.android.geeklocations.FandomLocationDetailFragment" />
+
+        <TextView
+            android:id="@+id/fandom_link_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:linksClickable="true"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fandom_link_one"/>
+
+        <TextView
+            android:id="@+id/fandom_link_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:linksClickable="true"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fandom_link_two"/>
+
+        <TextView
+            android:id="@+id/fandom_copyrights"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/copyrights_string"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textIsSelectable="true"
+            android:textSize="8sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fandom_link_three"
+            tools:context="com.example.android.geeklocations.FandomLocationDetailFragment" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

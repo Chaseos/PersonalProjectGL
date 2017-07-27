@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">GeekLocations</string>
+    <string name="title_fandom_list">Fandoms</string>
+    <string name="title_fandom_detail">Fandom Detail</string>
+    <string name="open_location_in_map">Open Location in Map</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="copyrights">Copyrights</string>
+    <string name="suggestions">Suggestions</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="my_email">chase.olson@gmail.com</string>
+    <string name="email_subject_line">Suggestion or addition for GeekLocations App</string>
+    <string name="email_body_text">My suggestion:</string>
+    <string name="about_text_view">Geek Locations is an app to bring together the fantasy worlds that we love and the real world that we can see.\n\nThis app was built by Chase Olson, a travel loving geek.</string>
+    <string name="copyrights_text">This app has no affiliation with any franchises, studios, or creators. This is an unofficial fan app, made by fans for other fans. All photos and videos are copyright to their respective owners and no copyright infringement is intended. If you claim copyright to any item or items displayed on the app and wish to have them removed, please contact us and they will be removed.</string>
+    <string name="images">Images</string>
+    <string name="video">Video</string>
+    <string name="tours">Tours</string>
+    <string name="location_details">Location Details:</string>
+    <string name="trivia">Trivia:</string>
+    <string name="more_info">More Info:</string>
+
+    <string-array name="drawer_array">
+        <item>Home</item>
+        <item>About</item>
+        <item>Exit</item>
+    </string-array>
+
+    <string name="open_map">Open Map</string>
+    <string name="map">Map</string>
+    <string name="copyrights_string">COPYRIGHTS: This app has no affiliation with any franchises, studios, or creators. This is an unofficial fan app, made by fans for other fans. All photos and videos are copyright to their respective owners and no copyright infringement is intended. If you claim copyright to any item or items displayed on the app and wish to have them removed, please contact us and they will be removed.</string>
+    <string name="adaptation_location">Adaptation Location:</string>
+    <string name="filming_location">Filming Location:</string>
+    <string name="inspiration_location">Inspiration Location:</string>
+    <string name="favorites">Favorites</string>
+    <string name="favorite">Favorite</string>
+
+</resources>
