@@ -172,12 +172,12 @@ public class FandomDetailActivity extends AppCompatActivity implements
     private void setupViewPager() {
         Bundle arguments = new Bundle();
         arguments.putInt(MainActivity.ARG_ITEM_ID, locationId);
-        CategoryAdapter categoryAdapter = new CategoryAdapter(getSupportFragmentManager(), arguments);
+        DetailsPagerAdapter detailsPagerAdapter = new DetailsPagerAdapter(getSupportFragmentManager(), arguments);
 
         if (viewPager == null) {
             viewPager = (ViewPager) findViewById(R.id.viewpager);
             TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
-            viewPager.setAdapter(categoryAdapter);
+            viewPager.setAdapter(detailsPagerAdapter);
             tabLayout.setupWithViewPager(viewPager);
         }
     }

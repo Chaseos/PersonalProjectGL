@@ -5,12 +5,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-class CategoryAdapter extends FragmentStatePagerAdapter {
+class DetailsPagerAdapter extends FragmentStatePagerAdapter {
 
     private final String[] tabTitles = new String[]{"Fandom Location", "Visit This Location"};
     private final Bundle fragmentBundle;
 
-    CategoryAdapter(FragmentManager fm, Bundle data) {
+    DetailsPagerAdapter(FragmentManager fm, Bundle data) {
         super(fm);
         fragmentBundle = data;
     }
