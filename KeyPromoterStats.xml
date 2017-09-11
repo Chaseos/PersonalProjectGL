@@ -2,7 +2,10 @@
   <component name="KeyPromoterStats">
     <option name="stats">
       <map>
-        <entry key="'Shift+F10'" value="2" />
+        <entry key="'Ctrl+Alt+S'" value="2" />
+        <entry key="'Ctrl+F2'" value="5" />
+        <entry key="'Ctrl+Shift+F10'" value="1" />
+        <entry key="'Shift+F10'" value="9" />
       </map>
     </option>
   </component>
