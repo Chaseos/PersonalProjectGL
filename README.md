@@ -1,5 +1,5 @@
 # PersonalProjectGL
-A personal project of mine that brings together fictional and real world locations.
+A personal project of mine that bring together fictional world locations and real locations.
 
 This project was created and designed by Chase Olson. This app is uncompleted and is only up to provide
 a sample of my Android App Creation. The database includes 4 locations, whereas in the ideal completed

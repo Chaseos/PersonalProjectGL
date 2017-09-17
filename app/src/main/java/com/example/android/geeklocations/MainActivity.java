@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_suggestions:
                 intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-                intent.putExtra(Intent.EXTRA_EMAIL, new String[] {getString(R.string.my_email)});
+                intent.putExtra(Intent.EXTRA_EMAIL, getString(R.string.my_email));
                 intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject_line));
                 intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_body_text));
                 if (intent.resolveActivity(getPackageManager()) != null) {
