@@ -10,6 +10,9 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.view.ViewPager;
@@ -172,7 +175,7 @@ public class FandomDetailActivity extends AppCompatActivity implements
     private void setupViewPager() {
         Bundle arguments = new Bundle();
         arguments.putInt(MainActivity.ARG_ITEM_ID, locationId);
-        CategoryAdapter categoryAdapter = new CategoryAdapter(getSupportFragmentManager(), arguments);
+        DetailsPagerAdapter categoryAdapter = new DetailsPagerAdapter(getSupportFragmentManager(), arguments);
 
         if (viewPager == null) {
             viewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -219,6 +222,41 @@ public class FandomDetailActivity extends AppCompatActivity implements
         }
         finish();
     }
+
+    class DetailsPagerAdapter extends FragmentStatePagerAdapter {
+
+        private final String[] tabTitles = new String[]{"Fandom Location", "Visit This Location"};
+        private final Bundle fragmentBundle;
+
+        DetailsPagerAdapter(FragmentManager fm, Bundle data) {
+            super(fm);
+            fragmentBundle = data;
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            if (position == 0) {
+                FandomLocationDetailFragment fandomLocationDetailFragment = new FandomLocationDetailFragment();
+                fandomLocationDetailFragment.setArguments(fragmentBundle);
+                return fandomLocationDetailFragment;
+            } else {
+                RealLocationDetailFragment realLocationDetailFragment = new RealLocationDetailFragment();
+                realLocationDetailFragment.setArguments(fragmentBundle);
+                return realLocationDetailFragment;
+            }
+        }
+
+        @Override
+        public int getCount() {
+            return 2;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return tabTitles[position];
+        }
+    }
+
 }
 
 
